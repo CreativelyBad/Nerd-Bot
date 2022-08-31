@@ -1,4 +1,3 @@
-from nturl2path import url2pathname
 import os
 import discord
 import random
@@ -50,7 +49,7 @@ async def on_message(message):
                 elif operator_choice == 3:
                     equation += ' ÷ '
 
-        await message.channel.send('What is ' + equation + '?')
+        await message.channel.send('Your question is: ' + equation)
         return
     elif user_message.lower() == '!wiki':
         wiki_url = requests.get("https://en.wikipedia.org/wiki/Special:Random")
