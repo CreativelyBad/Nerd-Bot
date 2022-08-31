@@ -4,7 +4,7 @@ import discord
 import random
 import requests
 from dotenv import load_dotenv
-from information import facts
+from facts import facts
 from bs4 import BeautifulSoup
 
 # replace the token variable with your own bot token to test the bot out
